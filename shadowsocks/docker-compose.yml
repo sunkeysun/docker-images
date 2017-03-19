@@ -1,0 +1,8 @@
+# shadowsocks compose
+
+# example socks
+example:
+    image: sunkeysun/shadowsocks
+    command: -p 1024 -k test -m aes-256-cfb
+    ports:
+        - "1024:1024"
