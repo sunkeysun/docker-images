@@ -1,5 +1,5 @@
 # shadownsocks image
-FROM centos
+FROM centos:7
 
 MAINTAINER Sunkey Sun "sunkeysun@outlook.com"
 
