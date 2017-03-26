@@ -1,7 +1,7 @@
 # shadownsocks image
 FROM centos:7
 
-MAINTAINER Sunkey Sun "sunkeysun@outlook.com"
+MAINTAINER Sunkey "sunkeysun@outlook.com"
 
 RUN yum -y update
 RUN yum -y install python-setuptools && easy_install pip
