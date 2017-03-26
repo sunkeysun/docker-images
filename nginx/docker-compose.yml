@@ -2,12 +2,13 @@
 
 nginx:
     image: sunkeysun/nginx
-    volumes:
-        - "${PWD}:/data"
     ports:
         - 80:80
+    volumes:
+        - "${PWD}/config:/opt/nginx/conf"
+        - "${PWD}/html:/opt/nginx/html"
+        - "${PWD}/logs:/opt/nginx/logs"
     command:
-        - "-c"
-        - "/data/config/nginx.conf"
         - "-g"
         - "daemon off;"
+
