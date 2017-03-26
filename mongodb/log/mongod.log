@@ -1,0 +1,54 @@
+2017-03-25T14:01:45.590+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=28018 dbpath=/data/db 64-bit host=1c2ba4fe511b
+2017-03-25T14:01:45.592+0000 I CONTROL  [initandlisten] db version v3.4.2
+2017-03-25T14:01:45.592+0000 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-03-25T14:01:45.593+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.0-fips 29 Mar 2010
+2017-03-25T14:01:45.593+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-03-25T14:01:45.594+0000 I CONTROL  [initandlisten] modules: none
+2017-03-25T14:01:45.594+0000 I CONTROL  [initandlisten] build environment:
+2017-03-25T14:01:45.594+0000 I CONTROL  [initandlisten]     distmod: amazon
+2017-03-25T14:01:45.594+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2017-03-25T14:01:45.595+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-03-25T14:01:45.595+0000 I CONTROL  [initandlisten] options: { config: "/data/config/mongod.conf", net: { port: 28018 }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/log/mongod.log" } }
+2017-03-25T14:01:45.597+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2017-03-25T14:01:45.606+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-03-25T14:01:45.609+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-03-25T14:01:45.611+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1461M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-03-25T14:01:55.497+0000 I CONTROL  [initandlisten] 
+2017-03-25T14:01:55.500+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-25T14:01:55.500+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-25T14:01:55.501+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2017-03-25T14:01:55.502+0000 I CONTROL  [initandlisten] 
+2017-03-25T14:01:55.518+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2017-03-25T14:01:55.519+0000 I NETWORK  [thread1] waiting for connections on port 28018
+2017-03-25T14:01:55.848+0000 I NETWORK  [thread1] connection accepted from 172.17.0.1:44206 #1 (1 connection now open)
+2017-03-25T14:01:55.849+0000 I NETWORK  [conn1] received client metadata from 172.17.0.1:44206 conn1: { driver: { name: "mongo-java-driver", version: "3T_5.0.0-74-g1de6631-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.12.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-03-25T14:01:55.857+0000 I NETWORK  [thread1] connection accepted from 172.17.0.1:44208 #2 (2 connections now open)
+2017-03-25T14:01:55.858+0000 I NETWORK  [conn2] received client metadata from 172.17.0.1:44208 conn2: { driver: { name: "mongo-java-driver", version: "3T_5.0.0-74-g1de6631-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.12.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-03-25T14:01:58.914+0000 I NETWORK  [thread1] connection accepted from 172.17.0.1:44210 #3 (3 connections now open)
+2017-03-25T14:01:58.915+0000 I NETWORK  [conn3] received client metadata from 172.17.0.1:44210 conn3: { driver: { name: "mongo-java-driver", version: "3T_5.0.0-74-g1de6631-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.12.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-03-25T14:33:27.374+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after globalLock: 0, after locks: 0, after network: 0, after opLatencies: 0, after opcounters: 0, after opcountersRepl: 0, after repl: 0, after security: 0, after storageEngine: 0, after tcmalloc: 0, after wiredTiger: 1010, at end: 1010 }
+2017-03-25T15:13:33.557+0000 I NETWORK  [thread1] connection accepted from 172.17.0.1:44212 #4 (4 connections now open)
+2017-03-25T15:13:33.559+0000 I NETWORK  [conn4] received client metadata from 172.17.0.1:44212 conn4: { driver: { name: "mongo-java-driver", version: "3T_5.0.0-74-g1de6631-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.12.3" }, platform: "Java/Oracle Corporation/1.8.0_121-b13" }
+2017-03-25T15:13:42.949+0000 I NETWORK  [thread1] connection accepted from 172.17.0.1:44214 #5 (5 connections now open)
+2017-03-25T15:13:42.950+0000 I NETWORK  [conn5] received client metadata from 172.17.0.1:44214 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.4.0" } }
+2017-03-25T18:44:39.477+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after globalLock: 0, after locks: 0, after network: 0, after opLatencies: 0, after opcounters: 0, after opcountersRepl: 0, after repl: 0, after security: 0, after storageEngine: 0, after tcmalloc: 0, after wiredTiger: 896621, at end: 896621 }
+2017-03-25T21:10:28.128+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after globalLock: 0, after locks: 0, after network: 0, after opLatencies: 0, after opcounters: 0, after opcountersRepl: 0, after repl: 0, after security: 0, after storageEngine: 0, after tcmalloc: 0, after wiredTiger: 388811, at end: 388811 }
+2017-03-26T00:43:33.258+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 524440, after globalLock: 524440, after locks: 524440, after network: 524440, after opLatencies: 524440, after opcounters: 524440, after opcountersRepl: 524440, after repl: 524440, after security: 524440, after storageEngine: 524440, after tcmalloc: 524440, after wiredTiger: 524440, at end: 524440 }
+2017-03-26T01:08:26.233+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 1488904, after globalLock: 1488904, after locks: 1488904, after network: 1488904, after opLatencies: 1488904, after opcounters: 1488904, after opcountersRepl: 1488904, after repl: 1488904, after security: 1488904, after storageEngine: 1488904, after tcmalloc: 1488904, after wiredTiger: 1488904, at end: 1488904 }
+2017-03-26T01:36:51.455+0000 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after globalLock: 0, after locks: 0, after network: 0, after opLatencies: 0, after opcounters: 0, after opcountersRepl: 0, after repl: 0, after security: 0, after storageEngine: 0, after tcmalloc: 590392, after wiredTiger: 590392, at end: 590392 }
+2017-03-26T03:47:41.573+0000 I -        [conn5] end connection 172.17.0.1:44214 (5 connections now open)
+2017-03-26T03:47:41.658+0000 I -        [conn4] end connection 172.17.0.1:44212 (4 connections now open)
+2017-03-26T03:47:41.660+0000 I -        [conn3] end connection 172.17.0.1:44210 (3 connections now open)
+2017-03-26T03:47:41.660+0000 I -        [conn2] end connection 172.17.0.1:44208 (3 connections now open)
+2017-03-26T03:47:41.661+0000 I -        [conn1] end connection 172.17.0.1:44206 (3 connections now open)
+2017-03-26T03:47:55.890+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2017-03-26T03:47:55.895+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-03-26T03:47:55.905+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2017-03-26T03:47:55.906+0000 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2017-03-26T03:47:55.907+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-28018.sock
+2017-03-26T03:47:55.908+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-03-26T03:47:55.909+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2017-03-26T03:47:55.939+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2017-03-26T03:47:56.050+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-03-26T03:47:56.051+0000 I CONTROL  [signalProcessingThread] now exiting
+2017-03-26T03:47:56.052+0000 I CONTROL  [signalProcessingThread] shutting down with code:0

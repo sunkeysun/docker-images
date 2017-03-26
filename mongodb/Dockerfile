@@ -1,16 +1,15 @@
 # mongodb 3.4.2
 
-FROM centos:7
+FROM centos
 
-MAINTAINER Sunkey Sun "sunkeysun@outlook.com"
+MAINTAINER Sunkey "sunkeysun@outlook.com"
 
 WORKDIR /opt
-VOLUME ["/data", "/config", "/var/log"]
+VOLUME ["/data"]
 
-ADD ./mongodb-linux-x86_64-amazon-3.4.2.tgz ./
-RUN mv mongodb-linux-x86_64-amazon-3.4.2 mongodb
-
-RUN ls ./
+ADD https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-amazon-3.4.2.tgz ./
+RUN tar -zxvf mongodb-linux-x86_64-amazon-3.4.2.tgz \
+	&& mv mongodb-linux-x86_64-amazon-3.4.2 mongodb
 
 ENTRYPOINT ["/opt/mongodb/bin/mongod"]
-CMD ["--config", "/config/mongod.conf"]
+CMD ["--config", "/data/config/mongod.conf"]

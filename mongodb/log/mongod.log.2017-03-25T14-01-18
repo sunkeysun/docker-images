@@ -1,0 +1,22 @@
+2017-03-25T13:55:46.885+0000 I CONTROL  [initandlisten] MongoDB starting : pid=6 port=28018 dbpath=/data/db 64-bit host=1c2ba4fe511b
+2017-03-25T13:55:46.886+0000 I CONTROL  [initandlisten] db version v3.4.2
+2017-03-25T13:55:46.886+0000 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-03-25T13:55:46.887+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.0-fips 29 Mar 2010
+2017-03-25T13:55:46.887+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-03-25T13:55:46.887+0000 I CONTROL  [initandlisten] modules: none
+2017-03-25T13:55:46.888+0000 I CONTROL  [initandlisten] build environment:
+2017-03-25T13:55:46.888+0000 I CONTROL  [initandlisten]     distmod: amazon
+2017-03-25T13:55:46.889+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2017-03-25T13:55:46.889+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-03-25T13:55:46.889+0000 I CONTROL  [initandlisten] options: { config: "/data/config/mongod.conf", net: { port: 28018 }, processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/log/mongod.log" } }
+2017-03-25T13:55:46.893+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2017-03-25T13:55:46.905+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-03-25T13:55:46.908+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-03-25T13:55:46.910+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1461M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-03-25T13:55:56.779+0000 I CONTROL  [initandlisten] 
+2017-03-25T13:55:56.782+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-25T13:55:56.783+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-25T13:55:56.784+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2017-03-25T13:55:56.784+0000 I CONTROL  [initandlisten] 
+2017-03-25T13:55:56.800+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2017-03-25T13:55:56.802+0000 I NETWORK  [thread1] waiting for connections on port 28018

@@ -1,0 +1,9 @@
+# mongodb
+
+mongodb:
+    image: sunkeysun/mongodb
+    volumes:
+        - "${PWD}:/data"
+    ports:
+        - "28018:28018"
+    command: --config=/data/config/mongod.conf
